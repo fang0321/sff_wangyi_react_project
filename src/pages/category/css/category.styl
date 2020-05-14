@@ -1,0 +1,110 @@
+.category
+  width 100%
+  height 100%
+  padding-top 87px
+  overflow hidden
+  .header
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 87px
+    padding 15px 30px
+    box-sizing border-box
+    border-bottom 1px solid rgb(217, 217, 217);
+    .search
+      width 100%
+      height 57px
+      background-color rgb(237, 237, 237)
+      border-radius 10px
+      text-align center
+      line-height 57px
+      .icon-fangdajing
+        font-size 30px
+        color gray
+        font-weight 700
+        margin-right 10px
+      span 
+        color #666
+        font-size 28px
+  .content
+    width 100%
+    height 1148px
+    display flex
+    .navWrap
+      width 161px
+      height 100%
+      border-right 1px solid rgb(217, 217, 217);
+      background-color #fff
+      .nav
+        width 100%
+        height 100%
+        overflow hidden
+        .cate
+          padding 40px 0
+          min-height 105%
+          .cateItem
+            position relative
+            width 100%
+            height 50px
+            text-align center
+            line-height 50px
+            margin-top 40px
+            &.active
+              &:after
+                content ''
+                position absolute
+                left 0
+                top 0
+                background-color: #ab2b2b
+                width 6px
+                height 100%
+              .txt
+                color rgb(171, 43, 43);
+            &:nth-of-type(1)
+              margin-top 0
+            // margin-top 40px
+            .txt
+              font-size 28px
+              color #333
+    .cateListWrap
+      overflow hidden
+      height 100%
+      width 588px
+      padding 0px 30px 21px 30px
+      box-sizing border-box
+      .cateList
+        padding-top 30px
+        width 100%
+        min-height 105%
+        .banner
+          width 100%
+          height 192px
+          margin-bottom 32px
+          background-color pink
+          img
+            width 100%
+            height 100%
+        .list
+          width 100%
+          overflow hidden
+          .listItem
+            float left
+            width 144px
+            height 216px
+            margin-right 34px
+            display flex
+            flex-direction column
+            align-items center
+            &:nth-of-type(3n)
+              margin-right 0
+            img
+              width 144px
+              height 144px
+            span 
+              text-align center
+              width 100%
+              height 100%
+              white-space nowrap
+              overflow hidden
+              text-overflow ellipsis
